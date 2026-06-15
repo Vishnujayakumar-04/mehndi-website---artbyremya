@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mehendi Portfolio & Collections | Art by Remya</title>
+  <meta name="description" content="Explore Art by Remya's stunning mehendi portfolio — bridal, engagement, Arabic, traditional, and modern designs. View our finest work and collections.">
+  <meta property="og:title" content="Mehendi Portfolio & Collections | Art by Remya">
+  <meta property="og:description" content="Browse our portfolio of premium mehendi designs — bridal, Arabic, traditional & modern.">
+  <meta name="theme-color" content="#2B2118">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header header--scrolled" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">Art by <span>Remya</span></a>
+      <nav class="header__nav">
+        <div class="header__nav-links">
+          <a href="index.html" class="header__nav-link">Home</a>
+          <a href="about.html" class="header__nav-link">About</a>
+          <a href="services.html" class="header__nav-link">Services</a>
+          <a href="portfolio.html" class="header__nav-link header__nav-link--active">Portfolio</a>
+          <a href="contact.html" class="header__nav-link">Contact</a>
+        </div>
+        <a href="contact.html" class="btn btn--primary btn--sm">Book Appointment</a>
+      </nav>
+      <button class="header__menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav__overlay" id="mobileOverlay"></div>
+  <nav class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav__links">
+      <a href="index.html" class="mobile-nav__link">Home</a>
+      <a href="about.html" class="mobile-nav__link">About</a>
+      <a href="services.html" class="mobile-nav__link">Services</a>
+      <a href="portfolio.html" class="mobile-nav__link">Portfolio</a>
+      <a href="contact.html" class="mobile-nav__link">Contact</a>
+    </div>
+    <div class="mobile-nav__cta">
+      <a href="contact.html" class="btn btn--primary" style="width:100%">Book Appointment</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="page-header__bg">
+      <img src="assets/images/collections/bridal.png" alt="Mehendi portfolio" loading="eager">
+    </div>
+    <div class="page-header__content">
+      <h1 class="page-header__title">Our Portfolio</h1>
+      <p class="page-header__subtitle">A gallery of our finest mehendi artistry</p>
+      <div class="page-header__breadcrumb">
+        <a href="index.html">Home</a>
+        <span>→</span>
+        Portfolio
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED COLLECTIONS -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label" style="justify-content:center">Curated Work</span>
+        <h2 class="section-title">Featured Collections</h2>
+        <p class="section-subtitle" style="margin: 0 auto var(--space-xl)">Explore our curated galleries across different styles and traditions.</p>
+      </div>
+      <div class="collections__grid">
+        <div class="collection-card gs-reveal-up" data-collection="bridal">
+          <div class="collection-card__image">
+            <img src="assets/images/collections/bridal.png" alt="Bridal Collection" loading="lazy">
+          </div>
+          <div class="collection-card__overlay">
+            <h3 class="collection-card__title">Bridal Collection</h3>
+            <span class="collection-card__count">Intricate bridal designs</span>
+          </div>
+        </div>
+        <div class="collection-card gs-reveal-up" data-collection="arabic">
+          <div class="collection-card__image">
+            <img src="assets/images/collections/arabic.png" alt="Arabic Collection" loading="lazy">
+          </div>
+          <div class="collection-card__overlay">
+            <h3 class="collection-card__title">Arabic Collection</h3>
+            <span class="collection-card__count">Bold flowing patterns</span>
+          </div>
+        </div>
+        <div class="collection-card gs-reveal-up" data-collection="traditional">
+          <div class="collection-card__image">
+            <img src="assets/images/collections/traditional.png" alt="Traditional Collection" loading="lazy">
+          </div>
+          <div class="collection-card__overlay">
+            <h3 class="collection-card__title">Traditional Collection</h3>
+            <span class="collection-card__count">Classic Indian motifs</span>
+          </div>
+        </div>
+        <div class="collection-card gs-reveal-up" data-collection="modern">
+          <div class="collection-card__image">
+            <img src="assets/images/collections/modern.png" alt="Modern Collection" loading="lazy">
+          </div>
+          <div class="collection-card__overlay">
+            <h3 class="collection-card__title">Modern Collection</h3>
+            <span class="collection-card__count">Contemporary designs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO GALLERY -->
+  <section class="section section--alt" id="gallery">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label" style="justify-content:center">Gallery</span>
+        <h2 class="section-title">Our Work</h2>
+        <p class="section-subtitle" style="margin: 0 auto var(--space-xl)">Browse through our portfolio of mehendi designs.</p>
+      </div>
+
+      <div class="portfolio__filters" id="portfolioFilters">
+        <button class="portfolio__filter portfolio__filter--active" data-filter="all">All</button>
+        <button class="portfolio__filter" data-filter="bridal">Bridal</button>
+        <button class="portfolio__filter" data-filter="engagement">Engagement</button>
+        <button class="portfolio__filter" data-filter="arabic">Arabic</button>
+        <button class="portfolio__filter" data-filter="traditional">Traditional</button>
+        <button class="portfolio__filter" data-filter="festival">Festival</button>
+      </div>
+
+      <div class="portfolio__masonry" id="portfolioMasonry">
+        <div class="gallery-item" data-category="bridal" data-index="0">
+          <img src="assets/images/portfolio/p1.png" alt="Bridal mehendi palm design" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div class="gallery-item__overlay-icon">⊕</div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="bridal" data-index="1">
+          <img src="assets/images/portfolio/p2.png" alt="Bridal foot mehendi design" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div class="gallery-item__overlay-icon">⊕</div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="arabic" data-index="2">
+          <img src="assets/images/portfolio/p3.png" alt="Arabic mehendi back of hand" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div class="gallery-item__overlay-icon">⊕</div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="bridal" data-index="3">
+          <img src="assets/images/portfolio/p4.png" alt="Full bridal mehendi coverage" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div class="gallery-item__overlay-icon">⊕</div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="traditional" data-index="4">
+          <img src="assets/images/portfolio/p5.png" alt="Traditional peacock mehendi" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div class="gallery-item__overlay-icon">⊕</div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="engagement" data-index="5">
+          <img src="assets/images/portfolio/p6.png" alt="Engagement mehendi design" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div class="gallery-item__overlay-icon">⊕</div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="arabic" data-index="6">
+          <img src="assets/images/portfolio/p7.png" alt="Arabic vine pattern" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div class="gallery-item__overlay-icon">⊕</div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="traditional" data-index="7">
+          <img src="assets/images/portfolio/p8.png" alt="Traditional Indian mehendi" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div class="gallery-item__overlay-icon">⊕</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEFORE / AFTER: THE TRANSFORMATION -->
+  <section class="section" id="transformation">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label" style="justify-content:center">The Transformation</span>
+        <h2 class="section-title">Fresh to Dark Stain</h2>
+        <p class="section-subtitle" style="margin: 0 auto var(--space-xl)">Watch the magic unfold — from freshly applied mehendi to a rich, deep stain within 24–48 hours.</p>
+      </div>
+      <div class="transformation__grid">
+        <div class="transform-card gs-reveal-up">
+          <div class="transform-card__slider" data-transform="1">
+            <div class="transform-card__after">
+              <img src="assets/images/portfolio/p1.png" alt="Dark mehendi stain" loading="lazy">
+            </div>
+            <div class="transform-card__before">
+              <img src="assets/images/portfolio/p4.png" alt="Fresh mehendi paste" loading="lazy">
+            </div>
+            <div class="transform-card__divider" style="left: 50%;"></div>
+            <span class="transform-card__label transform-card__label--before">Fresh</span>
+            <span class="transform-card__label transform-card__label--after">48 Hours</span>
+          </div>
+          <div class="transform-card__info">
+            <h4 class="transform-card__title">Bridal Design</h4>
+            <p class="transform-card__text">Drag to compare</p>
+          </div>
+        </div>
+        <div class="transform-card gs-reveal-up">
+          <div class="transform-card__slider" data-transform="2">
+            <div class="transform-card__after">
+              <img src="assets/images/portfolio/p5.png" alt="Dark mehendi stain" loading="lazy">
+            </div>
+            <div class="transform-card__before">
+              <img src="assets/images/portfolio/p3.png" alt="Fresh mehendi paste" loading="lazy">
+            </div>
+            <div class="transform-card__divider" style="left: 50%;"></div>
+            <span class="transform-card__label transform-card__label--before">Fresh</span>
+            <span class="transform-card__label transform-card__label--after">48 Hours</span>
+          </div>
+          <div class="transform-card__info">
+            <h4 class="transform-card__title">Arabic Design</h4>
+            <p class="transform-card__text">Drag to compare</p>
+          </div>
+        </div>
+        <div class="transform-card gs-reveal-up">
+          <div class="transform-card__slider" data-transform="3">
+            <div class="transform-card__after">
+              <img src="assets/images/portfolio/p2.png" alt="Dark mehendi stain" loading="lazy">
+            </div>
+            <div class="transform-card__before">
+              <img src="assets/images/portfolio/p8.png" alt="Fresh mehendi paste" loading="lazy">
+            </div>
+            <div class="transform-card__divider" style="left: 50%;"></div>
+            <span class="transform-card__label transform-card__label--before">Fresh</span>
+            <span class="transform-card__label transform-card__label--after">48 Hours</span>
+          </div>
+          <div class="transform-card__info">
+            <h4 class="transform-card__title">Traditional Design</h4>
+            <p class="transform-card__text">Drag to compare</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container cta-banner__content">
+      <h2 class="cta-banner__title gs-reveal-up">Love What You See?</h2>
+      <p class="cta-banner__text gs-reveal-up">Let's create your own masterpiece</p>
+      <a href="contact.html" class="btn btn--primary gs-reveal-up">Book Appointment</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h3 class="footer__brand-name">Art by Remya</h3>
+          <p class="footer__brand-tagline">Transforming Hands Into Art</p>
+          <p class="footer__brand-text">Premium mehendi artistry for brides, engagements, festivals, and special celebrations.</p>
+          <div class="footer__social">
+            <a href="https://instagram.com/artbyremya" target="_blank" rel="noopener" class="footer__social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://wa.me/918220275364" target="_blank" rel="noopener" class="footer__social-link" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+            <a href="https://facebook.com/artbyremya" target="_blank" rel="noopener" class="footer__social-link" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <div class="footer__links">
+            <a href="index.html" class="footer__link">Home</a>
+            <a href="about.html" class="footer__link">About</a>
+            <a href="services.html" class="footer__link">Services</a>
+            <a href="portfolio.html" class="footer__link">Portfolio</a>
+            <a href="contact.html" class="footer__link">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <div class="footer__links">
+            <a href="services.html" class="footer__link">Bridal Mehendi</a>
+            <a href="services.html" class="footer__link">Engagement Mehendi</a>
+            <a href="services.html" class="footer__link">Arabic Mehendi</a>
+            <a href="services.html" class="footer__link">Festival Mehendi</a>
+            <a href="services.html" class="footer__link">Custom Designs</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Get in Touch</h4>
+          <div class="footer__links">
+            <a href="tel:+918220275364" class="footer__link">+91 82202 75364</a>
+            <a href="mailto:hello@artbyremya.com" class="footer__link">hello@artbyremya.com</a>
+            <span class="footer__link">Pondicherry, India</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Art by Remya. All Rights Reserved.</span>
+        <span>Crafted with ♥ for beautiful celebrations</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close">✕</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous">‹</button>
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next">›</button>
+    <img class="lightbox__image" id="lightboxImage" src="" alt="Gallery image">
+  </div>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/918220275364?text=Hi!%20I'd%20like%20to%20book%20a%20mehendi%20appointment." target="_blank" rel="noopener" class="whatsapp-float" id="whatsappFloat">
+    <span class="whatsapp-float__tooltip">Book on WhatsApp</span>
+    <div class="whatsapp-float__btn">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </div>
+  </a>
+
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

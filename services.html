@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mehendi Services & Packages | Art by Remya</title>
+  <meta name="description" content="Explore our premium mehendi services — Bridal, Engagement, Arabic, Festival, Baby Shower, and Custom designs. View packages and book your appointment.">
+  <meta property="og:title" content="Mehendi Services & Packages | Art by Remya">
+  <meta property="og:description" content="Premium mehendi services for every celebration. Bridal, Engagement, Arabic, Festival & Custom designs.">
+  <meta name="theme-color" content="#2B2118">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header header--scrolled" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">Art by <span>Remya</span></a>
+      <nav class="header__nav">
+        <div class="header__nav-links">
+          <a href="index.html" class="header__nav-link">Home</a>
+          <a href="about.html" class="header__nav-link">About</a>
+          <a href="services.html" class="header__nav-link header__nav-link--active">Services</a>
+          <a href="portfolio.html" class="header__nav-link">Portfolio</a>
+          <a href="contact.html" class="header__nav-link">Contact</a>
+        </div>
+        <a href="contact.html" class="btn btn--primary btn--sm">Book Appointment</a>
+      </nav>
+      <button class="header__menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav__overlay" id="mobileOverlay"></div>
+  <nav class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav__links">
+      <a href="index.html" class="mobile-nav__link">Home</a>
+      <a href="about.html" class="mobile-nav__link">About</a>
+      <a href="services.html" class="mobile-nav__link">Services</a>
+      <a href="portfolio.html" class="mobile-nav__link">Portfolio</a>
+      <a href="contact.html" class="mobile-nav__link">Contact</a>
+    </div>
+    <div class="mobile-nav__cta">
+      <a href="contact.html" class="btn btn--primary" style="width:100%">Book Appointment</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="page-header__bg">
+      <img src="assets/images/hero/hero-bg.png" alt="Mehendi services" loading="eager">
+    </div>
+    <div class="page-header__content">
+      <h1 class="page-header__title">Our Services</h1>
+      <p class="page-header__subtitle">Premium mehendi artistry for every celebration</p>
+      <div class="page-header__breadcrumb">
+        <a href="index.html">Home</a>
+        <span>→</span>
+        Services
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES GRID -->
+  <section class="section">
+    <div class="container text-center">
+      <span class="section-label" style="justify-content:center">What We Offer</span>
+      <h2 class="section-title">Mehendi Services</h2>
+      <p class="section-subtitle" style="margin: 0 auto var(--space-xl)">From traditional bridal to modern custom — every design crafted with precision and love.</p>
+    </div>
+    <div class="container">
+      <div class="services__grid">
+        <div class="service-card gs-reveal-up">
+          <div class="service-card__image">
+            <img src="assets/images/services/bridal.png" alt="Bridal Mehendi" loading="lazy">
+          </div>
+          <div class="service-card__content">
+            <h3 class="service-card__title">Bridal Mehendi</h3>
+            <p class="service-card__desc">Full bridal coverage with intricate designs on both hands and feet. Traditional patterns, personalized motifs, and your love story woven into every detail.</p>
+            <a href="contact.html" class="service-card__link">Book Now →</a>
+          </div>
+        </div>
+        <div class="service-card gs-reveal-up">
+          <div class="service-card__image">
+            <img src="assets/images/services/engagement.png" alt="Engagement Mehendi" loading="lazy">
+          </div>
+          <div class="service-card__content">
+            <h3 class="service-card__title">Engagement Mehendi</h3>
+            <p class="service-card__desc">Elegant and sophisticated designs to celebrate your engagement with grace. Perfect balance of detail and subtlety for your special moment.</p>
+            <a href="contact.html" class="service-card__link">Book Now →</a>
+          </div>
+        </div>
+        <div class="service-card gs-reveal-up">
+          <div class="service-card__image">
+            <img src="assets/images/services/arabic.png" alt="Arabic Mehendi" loading="lazy">
+          </div>
+          <div class="service-card__content">
+            <h3 class="service-card__title">Arabic Mehendi</h3>
+            <p class="service-card__desc">Bold, flowing vine-like patterns with modern Arabic aesthetics. Thick strokes with beautiful negative space — timeless, chic, and contemporary.</p>
+            <a href="contact.html" class="service-card__link">Book Now →</a>
+          </div>
+        </div>
+        <div class="service-card gs-reveal-up">
+          <div class="service-card__image">
+            <img src="assets/images/services/festival.png" alt="Festival Mehendi" loading="lazy">
+          </div>
+          <div class="service-card__content">
+            <h3 class="service-card__title">Festival Mehendi</h3>
+            <p class="service-card__desc">Celebrate Diwali, Karwa Chauth, Eid, and more with beautiful festive designs. Medium-complexity patterns perfect for joyful occasions.</p>
+            <a href="contact.html" class="service-card__link">Book Now →</a>
+          </div>
+        </div>
+        <div class="service-card gs-reveal-up">
+          <div class="service-card__image">
+            <img src="assets/images/services/babyshower.png" alt="Baby Shower Mehendi" loading="lazy">
+          </div>
+          <div class="service-card__content">
+            <h3 class="service-card__title">Baby Shower Mehendi</h3>
+            <p class="service-card__desc">Delicate, feminine designs celebrating motherhood. Gentle patterns with baby-themed elements to honor the mom-to-be on her special day.</p>
+            <a href="contact.html" class="service-card__link">Book Now →</a>
+          </div>
+        </div>
+        <div class="service-card gs-reveal-up">
+          <div class="service-card__image">
+            <img src="assets/images/services/custom.png" alt="Custom Mehendi Designs" loading="lazy">
+          </div>
+          <div class="service-card__content">
+            <h3 class="service-card__title">Custom Designs</h3>
+            <p class="service-card__desc">Have a unique vision? Let's bring it to life. From portraits to personalized patterns, custom designs that are truly one of a kind.</p>
+            <a href="contact.html" class="service-card__link">Book Now →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING PACKAGES -->
+  <section class="section section--alt" id="pricing">
+    <div class="container text-center">
+      <span class="section-label" style="justify-content:center">Starting Packages</span>
+      <h2 class="section-title">Our Packages</h2>
+      <p class="section-subtitle" style="margin: 0 auto var(--space-xl)">Transparent pricing to help you plan. Every package includes premium quality natural mehendi and a luxury experience.</p>
+    </div>
+    <div class="container">
+      <div class="pricing__grid">
+        <div class="pricing-card gs-reveal-up">
+          <div class="pricing-card__icon">✿</div>
+          <h3 class="pricing-card__title">Festival</h3>
+          <p class="pricing-card__desc">Perfect for Diwali, Eid, Karwa Chauth, and casual celebrations</p>
+          <div class="pricing-card__price">₹XXX</div>
+          <div class="pricing-card__price-note">Starting from</div>
+          <div class="pricing-card__features">
+            <div class="pricing-card__feature">
+              <span class="pricing-card__feature-icon">✓</span>
+              <span>Single hand — front design</span>
+            </div>
+            <div class="pricing-card__feature">
+              <span class="pricing-card__feature-icon">✓</span>
+              <span>Premium natural mehendi</span>
+            </div>
+            <div class="pricing-card__feature">
+              <span class="pricing-card__feature-icon">✓</span>
+              <span>Design consultation included</span>
+            </div>
+            <div class="pricing-card__feature">
+              <span class="pricing-card__feature-icon">✓</span>
+              <span>Aftercare instructions</span>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn--outline btn--sm" style="width:100%">Book Now</a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured gs-reveal-up">
+          <div class="pricing-card__icon">❀</div>
+          <h3 class="pricing-card__title">Engagement</h3>
+          <p class="pricing-card__desc">Elegant designs for engagements, anniversaries, and special occasions</p>
+          <div class="pricing-card__price">₹XXXX</div>
+          <div class="pricing-card__price-note">Starting from</div>
+          <div class="pricing-card__features">
+            <div class="pricing-card__feature">
+              <span class="pricing-card__feature-icon">✓</span>
+              <span>Both hands — front &amp; back</span>
+            </div>
+            <div class="pricing-card__feature">
+              <span class="pricing-card__feature-icon">✓</span>
+              <span>Premium natural mehendi</span>
+            </div>
+            <div class="pricing-card__feature">
+              <span class="pricing-card__feature-icon">✓</span>
+              <span>Personalized design consultation</span>
+            </div>
+            <div class="pricing-card__feature">
+              <span class="pricing-card__feature-icon">✓</span>
+              <span>Custom elements &amp; motifs</span>
+            </div>
+            <div class="pricing-card__feature">
+              <span class="pricing-card__feature-icon">✓</span>
+              <span>Aftercare kit included</span>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn--primary btn--sm" style="width:100%">Book Now</a>
+        </div>
+
+        <div class="pricing-card gs-reveal-up">
+          <div class="pricing-card__icon">❁</div>
+          <h3 class="pricing-card__title">Bridal</h3>
+          <p class="pricing-card__desc">The complete bridal experience — intricate designs for your most special day</p>
+          <div class="pricing-card__price">₹XXXXX</div>
+          <div class="pricing-card__price-note">Starting from</div>
+          <div class="pricing-card__features">
+            <div class="pricing-card__feature">
+              <span class="pricing-card__feature-icon">✓</span>
+              <span>Full bridal — hands &amp; feet</span>
+            </div>
+            <div class="pricing-card__feature">
+              <span class="pricing-card__feature-icon">✓</span>
+              <span>Premium natural mehendi</span>
+            </div>
+            <div class="pricing-card__feature">
+              <span class="pricing-card__feature-icon">✓</span>
+              <span>Detailed design consultation</span>
+            </div>
+            <div class="pricing-card__feature">
+              <span class="pricing-card__feature-icon">✓</span>
+              <span>Intricate personalized patterns</span>
+            </div>
+            <div class="pricing-card__feature">
+              <span class="pricing-card__feature-icon">✓</span>
+              <span>Trial session available</span>
+            </div>
+            <div class="pricing-card__feature">
+              <span class="pricing-card__feature-icon">✓</span>
+              <span>Premium aftercare kit</span>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn--outline btn--sm" style="width:100%">Book Now</a>
+        </div>
+      </div>
+      <p class="text-center gs-reveal-up" style="margin-top: var(--space-lg); color: var(--color-text-light); font-size: var(--fs-small); font-style: italic;">
+        * Prices vary based on design complexity, coverage area, and travel requirements. Contact us for an exact quote.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROCESS TIMELINE -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label" style="justify-content:center">How It Works</span>
+        <h2 class="section-title">Our Process</h2>
+        <p class="section-subtitle" style="margin: 0 auto">From first conversation to final reveal — a seamless, premium experience.</p>
+      </div>
+
+      <div class="process__timeline">
+        <div class="process__step">
+          <div class="process__step-number">01</div>
+          <div class="process__step-content">
+            <h3 class="process__step-title">Consultation</h3>
+            <p class="process__step-text">We discuss your event, style preferences, and vision. Share reference images or let me suggest designs that match your aesthetic. This can be done in person or virtually.</p>
+          </div>
+        </div>
+        <div class="process__step">
+          <div class="process__step-number">02</div>
+          <div class="process__step-content">
+            <h3 class="process__step-title">Design Selection</h3>
+            <p class="process__step-text">Based on our consultation, I create a customized design plan. You'll review and approve the concept before your session, ensuring every detail is exactly as you envision.</p>
+          </div>
+        </div>
+        <div class="process__step">
+          <div class="process__step-number">03</div>
+          <div class="process__step-content">
+            <h3 class="process__step-title">Application</h3>
+            <p class="process__step-text">On your special day, I arrive with premium natural mehendi and apply your design with precision and care. Relaxing music, comfortable setup — a truly pampering experience.</p>
+          </div>
+        </div>
+        <div class="process__step">
+          <div class="process__step-number">04</div>
+          <div class="process__step-content">
+            <h3 class="process__step-title">Final Reveal</h3>
+            <p class="process__step-text">After the paste is removed, watch your design develop into a rich, deep stain over 24–48 hours. I provide detailed aftercare instructions for the best results.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container cta-banner__content">
+      <h2 class="cta-banner__title gs-reveal-up">Ready to Book Your Session?</h2>
+      <p class="cta-banner__text gs-reveal-up">Let's create something beautiful for your celebration</p>
+      <a href="contact.html" class="btn btn--primary gs-reveal-up">Book Appointment</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h3 class="footer__brand-name">Art by Remya</h3>
+          <p class="footer__brand-tagline">Transforming Hands Into Art</p>
+          <p class="footer__brand-text">Premium mehendi artistry for brides, engagements, festivals, and special celebrations.</p>
+          <div class="footer__social">
+            <a href="https://instagram.com/artbyremya" target="_blank" rel="noopener" class="footer__social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://wa.me/918220275364" target="_blank" rel="noopener" class="footer__social-link" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+            <a href="https://facebook.com/artbyremya" target="_blank" rel="noopener" class="footer__social-link" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <div class="footer__links">
+            <a href="index.html" class="footer__link">Home</a>
+            <a href="about.html" class="footer__link">About</a>
+            <a href="services.html" class="footer__link">Services</a>
+            <a href="portfolio.html" class="footer__link">Portfolio</a>
+            <a href="contact.html" class="footer__link">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <div class="footer__links">
+            <a href="services.html" class="footer__link">Bridal Mehendi</a>
+            <a href="services.html" class="footer__link">Engagement Mehendi</a>
+            <a href="services.html" class="footer__link">Arabic Mehendi</a>
+            <a href="services.html" class="footer__link">Festival Mehendi</a>
+            <a href="services.html" class="footer__link">Custom Designs</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Get in Touch</h4>
+          <div class="footer__links">
+            <a href="tel:+918220275364" class="footer__link">+91 82202 75364</a>
+            <a href="mailto:hello@artbyremya.com" class="footer__link">hello@artbyremya.com</a>
+            <span class="footer__link">Pondicherry, India</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Art by Remya. All Rights Reserved.</span>
+        <span>Crafted with ♥ for beautiful celebrations</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/918220275364?text=Hi!%20I'd%20like%20to%20book%20a%20mehendi%20appointment." target="_blank" rel="noopener" class="whatsapp-float" id="whatsappFloat">
+    <span class="whatsapp-float__tooltip">Book on WhatsApp</span>
+    <div class="whatsapp-float__btn">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </div>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

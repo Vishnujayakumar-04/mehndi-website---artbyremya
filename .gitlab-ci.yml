@@ -1,6 +1,7 @@
 
 stages:
   - validate
+  - deploy
 
 validate_website:
   stage: validate
@@ -16,3 +17,13 @@ validate_website:
     - test -f css/style.css
     - test -f js/main.js
     - echo "Website validation successful"
+
+deploy_to_netlify:
+  stage: deploy
+  image: node:20-alpine
+  before_script:
+    - npm install -g netlify-cli
+  script:
+    - netlify deploy --prod --dir=. --site="$220078fe-f433-45c6-8c4d-80628ba2e46d"
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'

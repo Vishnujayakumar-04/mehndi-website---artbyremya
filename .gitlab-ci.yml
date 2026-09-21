@@ -1,0 +1,18 @@
+
+stages:
+  - validate
+
+validate_website:
+  stage: validate
+  image: alpine:latest
+  script:
+    - test -f index.html
+    - test -f about.html
+    - test -f contact.html
+    - test -f portfolio.html
+    - test -f services.html
+    - test -d css
+    - test -d js
+    - test -f css/style.css
+    - test -f js/main.js
+    - echo "Website validation successful"

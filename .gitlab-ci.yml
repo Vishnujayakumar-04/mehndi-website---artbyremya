@@ -1,4 +1,3 @@
-
 stages:
   - validate
   - deploy
@@ -9,7 +8,7 @@ validate_website:
   script:
     - test -f index.html
     - test -f about.html
-    - test -f contact.html
+    - test -f contact.html  
     - test -f portfolio.html
     - test -f services.html
     - test -d css
@@ -20,7 +19,7 @@ validate_website:
 
 deploy_to_netlify:
   stage: deploy
-  image: node:20-alpine
+  image: node:24-alpine
   before_script:
     - npm install -g netlify-cli
   script:
